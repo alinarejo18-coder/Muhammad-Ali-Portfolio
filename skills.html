@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Muhammad Ali</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">&lt;MA/&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button id="themeToggle" class="theme-toggle-btn ms-3" type="button" aria-label="Toggle theme" title="Switch to light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== SKILLS HERO ========== -->
+    <section class="skills-hero">
+        <div class="container">
+            <h1 class="reveal">My <span class="gradient-text">Skills</span></h1>
+            <p class="reveal">Technologies and tools I use to bring ideas to life</p>
+        </div>
+    </section>
+
+    <!-- ========== FRONTEND SKILLS ========== -->
+    <section class="skills-section">
+        <div class="container">
+            <h3 class="skill-category-title reveal">
+                <i class="fas fa-desktop"></i> Frontend Development
+            </h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="skill-item reveal">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-css3-alt" style="color: #264de4;"></i> CSS3</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-js" style="color: #f0db4f;"></i> JavaScript</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skill-item reveal">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fas fa-code" style="color: #0769ad;"></i> jQuery</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fas fa-database" style="color: #00758f;"></i> MySQL (Basic)</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CIRCULAR SKILLS ========== -->
+    <section class="skills-section">
+        <div class="container">
+            <h3 class="skill-category-title reveal">
+                <i class="fas fa-chart-pie"></i> Core Competencies
+            </h3>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="skill-circle-wrapper">
+                        <div class="skill-circle">
+                            <svg width="150" height="150" viewBox="0 0 150 150">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#00f5ff"/>
+                                        <stop offset="100%" style="stop-color:#b829dd"/>
+                                    </linearGradient>
+                                </defs>
+                                <circle class="skill-circle-bg" cx="75" cy="75" r="65"/>
+                                <circle class="skill-circle-progress" cx="75" cy="75" r="65" data-percent="85"/>
+                            </svg>
+                            <div class="skill-circle-text">85%</div>
+                        </div>
+                        <div class="skill-circle-label">Web Design</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="skill-circle-wrapper">
+                        <div class="skill-circle">
+                            <svg width="150" height="150" viewBox="0 0 150 150">
+                                <circle class="skill-circle-bg" cx="75" cy="75" r="65"/>
+                                <circle class="skill-circle-progress" cx="75" cy="75" r="65" data-percent="80"/>
+                            </svg>
+                            <div class="skill-circle-text">80%</div>
+                        </div>
+                        <div class="skill-circle-label">Responsive Design</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="skill-circle-wrapper">
+                        <div class="skill-circle">
+                            <svg width="150" height="150" viewBox="0 0 150 150">
+                                <circle class="skill-circle-bg" cx="75" cy="75" r="65"/>
+                                <circle class="skill-circle-progress" cx="75" cy="75" r="65" data-percent="75"/>
+                            </svg>
+                            <div class="skill-circle-text">75%</div>
+                        </div>
+                        <div class="skill-circle-label">Problem Solving</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="skill-circle-wrapper">
+                        <div class="skill-circle">
+                            <svg width="150" height="150" viewBox="0 0 150 150">
+                                <circle class="skill-circle-bg" cx="75" cy="75" r="65"/>
+                                <circle class="skill-circle-progress" cx="75" cy="75" r="65" data-percent="70"/>
+                            </svg>
+                            <div class="skill-circle-text">70%</div>
+                        </div>
+                        <div class="skill-circle-label">UI/UX Design</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="skill-circle-wrapper">
+                        <div class="skill-circle">
+                            <svg width="150" height="150" viewBox="0 0 150 150">
+                                <circle class="skill-circle-bg" cx="75" cy="75" r="65"/>
+                                <circle class="skill-circle-progress" cx="75" cy="75" r="65" data-percent="80"/>
+                            </svg>
+                            <div class="skill-circle-text">80%</div>
+                        </div>
+                        <div class="skill-circle-label">Team Work</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 reveal">
+                    <div class="skill-circle-wrapper">
+                        <div class="skill-circle">
+                            <svg width="150" height="150" viewBox="0 0 150 150">
+                                <circle class="skill-circle-bg" cx="75" cy="75" r="65"/>
+                                <circle class="skill-circle-progress" cx="75" cy="75" r="65" data-percent="90"/>
+                            </svg>
+                            <div class="skill-circle-text">90%</div>
+                        </div>
+                        <div class="skill-circle-label">Learning Ability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title reveal">Services I <span class="gradient-text">Offer</span></h2>
+            <p class="section-subtitle reveal">What I can do for you</p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Web Development</h4>
+                        <p>Custom websites built with modern technologies and best practices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>Responsive Design</h4>
+                        <p>Mobile-friendly websites that work perfectly on all devices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h4>UI/UX Design</h4>
+                        <p>User-centered design solutions that are both beautiful and functional.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <h4>Database Management</h4>
+                        <p>Basic database solutions using MySQL for web applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bug"></i></div>
+                        <h4>Bug Fixing</h4>
+                        <p>Identifying and resolving issues in existing websites.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-tools"></i></div>
+                        <h4>Website Maintenance</h4>
+                        <p>Ongoing support and updates for your digital products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TOOLS ========== -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-title reveal">Tools & <span class="gradient-text">Technologies</span></h2>
+            <p class="section-subtitle reveal">Software I use daily</p>
+
+            <div class="row g-3">
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-html5" style="color: #e34c26;"></i></div>
+                        <p class="tool-name">HTML5</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-css3-alt" style="color: #264de4;"></i></div>
+                        <p class="tool-name">CSS3</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-js" style="color: #f0db4f;"></i></div>
+                        <p class="tool-name">JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-bootstrap" style="color: #7952b3;"></i></div>
+                        <p class="tool-name">Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fas fa-code" style="color: #0769ad;"></i></div>
+                        <p class="tool-name">jQuery</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fas fa-database" style="color: #00758f;"></i></div>
+                        <p class="tool-name">MySQL</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-git-alt" style="color: #f05032;"></i></div>
+                        <p class="tool-name">Git</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-github" style="color: #fff;"></i></div>
+                        <p class="tool-name">GitHub</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fas fa-code" style="color: #007acc;"></i></div>
+                        <p class="tool-name">VS Code</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fab fa-chrome" style="color: #4285f4;"></i></div>
+                        <p class="tool-name">DevTools</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fas fa-terminal" style="color: var(--neon-green);"></i></div>
+                        <p class="tool-name">Terminal</p>
+                    </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg-2 reveal">
+                    <div class="tool-item">
+                        <div class="tool-icon"><i class="fas fa-palette" style="color: #ff6b6b;"></i></div>
+                        <p class="tool-name">Canva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <span class="footer-brand">&lt;MA/&gt;</span>
+                    <p class="mt-2" style="color: var(--text-muted); font-size: 0.9rem;">
+                        Building digital experiences that matter.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <div class="social-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">
+                        &copy; 2024 Muhammad Ali. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923132002769" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        // Animate circular progress bars
+        document.addEventListener('DOMContentLoaded', function() {
+            const circles = document.querySelectorAll('.skill-circle-progress');
+
+            const animateCircles = () => {
+                circles.forEach(circle => {
+                    const rect = circle.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100 && !circle.classList.contains('animated')) {
+                        circle.classList.add('animated');
+                        const percent = circle.getAttribute('data-percent');
+                        const circumference = 2 * Math.PI * 65;
+                        const offset = circumference - (percent / 100) * circumference;
+                        circle.style.strokeDashoffset = offset;
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateCircles);
+            animateCircles();
+        });
+    </script>
+</body>
+</html>

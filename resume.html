@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Muhammad Ali</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">&lt;MA/&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button id="themeToggle" class="theme-toggle-btn ms-3" type="button" aria-label="Toggle theme" title="Switch to light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== RESUME HERO ========== -->
+    <section class="resume-hero">
+        <div class="container">
+            <h1 class="reveal">My <span class="gradient-text">Resume</span></h1>
+            <p class="reveal">A summary of my education, experience, and skills</p>
+            <button class="download-btn reveal" onclick="window.print()">
+                <i class="fas fa-print"></i> Print / Save as PDF
+            </button>
+        </div>
+    </section>
+
+    <!-- ========== RESUME CONTENT ========== -->
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-container reveal">
+                <!-- Resume Header -->
+                <div class="resume-header">
+                    <h2>Muhammad Ali</h2>
+                    <div class="title">Frontend Developer</div>
+                    <div class="resume-contact-info">
+                        <span><i class="fas fa-envelope"></i> muhammadali20@gmail.com</span>
+                        <span><i class="fas fa-phone"></i> 0313-2002769</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Malir Cantt, Karachi, Pakistan</span>
+                        <span><i class="fab fa-linkedin"></i> linkedin.com/in/muhammadali</span>
+                        <span><i class="fab fa-github"></i> github.com/muhammadali</span>
+                    </div>
+                </div>
+
+                <!-- Resume Body -->
+                <div class="resume-body">
+                    <!-- Summary -->
+                    <div class="mb-4">
+                        <h3 class="resume-section-title"><i class="fas fa-user"></i> Professional Summary</h3>
+                        <p class="resume-item-desc">
+                            Passionate Frontend Developer with 2 months of online experience in creating 
+                            beautiful, functional, and user-friendly web applications. Currently studying at 
+                            Aptech Computer Education. Proficient in HTML, CSS, JavaScript, Bootstrap, 
+                            basic MySQL, and jQuery. Strong problem-solving skills with a track record of 
+                            delivering high-quality projects on time.
+                        </p>
+                    </div>
+
+                    <div class="resume-two-col">
+                        <!-- Left Column -->
+                        <div class="resume-col">
+                            <!-- Experience -->
+                            <div class="mb-4">
+                                <h3 class="resume-section-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <span class="resume-item-title">Frontend Developer (Online)</span>
+                                        <span class="resume-item-date">2024 - Present</span>
+                                    </div>
+                                    <div class="resume-item-subtitle">Freelance / Remote</div>
+                                    <div class="resume-item-desc">
+                                        <ul>
+                                            <li>Developed responsive websites using HTML, CSS, and JavaScript</li>
+                                            <li>Created Food Ordering Website with cart functionality</li>
+                                            <li>Built Sports Website with live scores and player stats</li>
+                                            <li>Developed School Management Website with student portal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Education -->
+                            <div class="mb-4">
+                                <h3 class="resume-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <span class="resume-item-title">Software Development</span>
+                                        <span class="resume-item-date">2024 - Present</span>
+                                    </div>
+                                    <div class="resume-item-subtitle">Aptech Computer Education</div>
+                                    <div class="resume-item-desc">
+                                        Currently enrolled in a comprehensive software development program 
+                                        covering modern web technologies.
+                                    </div>
+                                </div>
+
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <span class="resume-item-title">Intermediate</span>
+                                        <span class="resume-item-date">Completed</span>
+                                    </div>
+                                    <div class="resume-item-subtitle">Karachi Board</div>
+                                    <div class="resume-item-desc">
+                                        Successfully completed Intermediate education from Karachi Board.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="resume-col">
+                            <!-- Skills -->
+                            <div class="mb-4">
+                                <h3 class="resume-section-title"><i class="fas fa-code"></i> Technical Skills</h3>
+
+                                <div class="resume-item" style="border-left: none; padding-left: 0;">
+                                    <div class="resume-item-title" style="margin-bottom: 10px;">Frontend</div>
+                                    <div class="resume-skills">
+                                        <span class="resume-skill-tag">HTML5</span>
+                                        <span class="resume-skill-tag">CSS3</span>
+                                        <span class="resume-skill-tag">JavaScript</span>
+                                        <span class="resume-skill-tag">Bootstrap</span>
+                                        <span class="resume-skill-tag">jQuery</span>
+                                        <span class="resume-skill-tag">Responsive Design</span>
+                                    </div>
+                                </div>
+
+                                <div class="resume-item" style="border-left: none; padding-left: 0;">
+                                    <div class="resume-item-title" style="margin-bottom: 10px;">Backend & Database</div>
+                                    <div class="resume-skills">
+                                        <span class="resume-skill-tag">MySQL (Basic)</span>
+                                        <span class="resume-skill-tag">PHP (Basic)</span>
+                                    </div>
+                                </div>
+
+                                <div class="resume-item" style="border-left: none; padding-left: 0;">
+                                    <div class="resume-item-title" style="margin-bottom: 10px;">Tools</div>
+                                    <div class="resume-skills">
+                                        <span class="resume-skill-tag">VS Code</span>
+                                        <span class="resume-skill-tag">Git / GitHub</span>
+                                        <span class="resume-skill-tag">Chrome DevTools</span>
+                                        <span class="resume-skill-tag">Canva</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Projects -->
+                            <div class="mb-4">
+                                <h3 class="resume-section-title"><i class="fas fa-project-diagram"></i> Projects</h3>
+
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <span class="resume-item-title">Food Ordering Website</span>
+                                        <span class="resume-item-date">2024</span>
+                                    </div>
+                                    <div class="resume-item-subtitle">Web Application</div>
+                                    <div class="resume-item-desc">
+                                        A complete food ordering platform with menu display, cart functionality, 
+                                        and responsive design using HTML, CSS, Bootstrap, and JavaScript.
+                                    </div>
+                                </div>
+
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <span class="resume-item-title">Sports Website</span>
+                                        <span class="resume-item-date">2024</span>
+                                    </div>
+                                    <div class="resume-item-subtitle">Web Application</div>
+                                    <div class="resume-item-desc">
+                                        Dynamic sports website with live scores, player stats, team information 
+                                        and news updates.
+                                    </div>
+                                </div>
+
+                                <div class="resume-item">
+                                    <div class="resume-item-header">
+                                        <span class="resume-item-title">School Management Website</span>
+                                        <span class="resume-item-date">2024</span>
+                                    </div>
+                                    <div class="resume-item-subtitle">Web Application</div>
+                                    <div class="resume-item-desc">
+                                        Comprehensive school website with student portal, admission forms, 
+                                        and MySQL database integration.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Languages -->
+                            <div class="mb-4">
+                                <h3 class="resume-section-title"><i class="fas fa-language"></i> Languages</h3>
+                                <div class="resume-item-desc">
+                                    <strong style="color: var(--text-primary);">Urdu</strong> - Native<br>
+                                    <strong style="color: var(--text-primary);">English</strong> - Conversational<br>
+                                    <strong style="color: var(--text-primary);">Sindhi</strong> - Basic
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <span class="footer-brand">&lt;MA/&gt;</span>
+                    <p class="mt-2" style="color: var(--text-muted); font-size: 0.9rem;">
+                        Building digital experiences that matter.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <div class="social-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">
+                        &copy; 2024 Muhammad Ali. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923132002769" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
