@@ -2896,3 +2896,38 @@ body.light-theme .btn-card-outline:hover {
         width: 100%;
     }
 }
+
+
+.hero-content{
+    text-align: center;
+    margin: auto;
+}
+
+.hero-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.typing-container,
+.hero-description{
+    margin-left: auto;
+    margin-right: auto;
+}
