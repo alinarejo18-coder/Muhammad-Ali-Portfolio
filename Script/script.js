@@ -215,7 +215,7 @@ if (contactForm) {
             return;
         }
 
-        alert("✅ Message Sent Successfully!");
+        alert("✅ " + name + ", Message Sent Successfully!");
 
         contactForm.reset();
     });
