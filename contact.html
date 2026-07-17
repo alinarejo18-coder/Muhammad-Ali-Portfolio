@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,19 +129,29 @@
                             <i class="fas fa-check-circle me-2"></i> Thank you! Your message has been sent successfully.
                         </div>
 
-                        <form id="contactForm">
+                       <form action="" method="POST">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Your Name</label>
-                                        <input type="text" class="form-control-custom" id="name" placeholder="Your Name">
+                                        <input
+type="text"
+name="name"
+class="form-control-custom"
+placeholder="Your Name"
+required>
                                         <div class="error-message" id="nameError"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Your Email</label>
-                                        <input type="email" class="form-control-custom" id="email" placeholder="your@email.com">
+                                        <input
+type="email"
+name="email"
+class="form-control-custom"
+placeholder="Email"
+required>
                                         <div class="error-message" id="emailError"></div>
                                     </div>
                                 </div>
@@ -152,13 +164,20 @@
 
                             <div class="form-group">
                                 <label class="form-label">Message</label>
-                                <textarea class="form-control-custom" id="message" placeholder="Tell me about your project..."></textarea>
+                            <textarea
+name="message"
+class="form-control-custom"
+rows="6"
+placeholder="Message"
+required></textarea>
                                 <div class="error-message" id="messageError"></div>
                             </div>
-
-                            <button type="submit" class="submit-btn">
-                                <i class="fas fa-paper-plane"></i> Send Message
-                            </button>
+<button
+type="submit"
+name="submit"
+class="btn-gradient">
+Send Message
+</button>
                         </form>
                     </div>
                 </div>
@@ -290,6 +309,6 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Script/script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
