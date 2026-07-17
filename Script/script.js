@@ -200,50 +200,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 // CONTACT FORM VALIDATION
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+const contactForm = document.getElementById("contactForm");
 
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-            let isValid = true;
+        const name = document.querySelector('input[name="name"]').value.trim();
+        const email = document.querySelector('input[name="email"]').value.trim();
+        const message = document.querySelector('textarea[name="message"]').value.trim();
 
-            if (name.length < 2) {
-                showError('name', 'Name must be at least 2 characters');
-                isValid = false;
-            } else {
-                hideError('name');
-            }
+        if (name === "" || email === "" || message === "") {
+            alert("❌ Message Not Sent!\nPlease fill all fields.");
+            return;
+        }
 
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showError('email', 'Please enter a valid email');
-                isValid = false;
-            } else {
-                hideError('email');
-            }
+        alert("✅ Message Sent Successfully!");
 
-            if (message.length < 10) {
-                showError('message', 'Message must be at least 10 characters');
-                isValid = false;
-            } else {
-                hideError('message');
-            }
-
-            if (isValid) {
-                const successMsg = document.getElementById('successMessage');
-                successMsg.style.display = 'block';
-                contactForm.reset();
-
-                setTimeout(() => {
-                    successMsg.style.display = 'none';
-                }, 5000);
-            }
-        });
-    }
+        contactForm.reset();
+    });
+}
 
     function showError(fieldId, message) {
         const field = document.getElementById(fieldId);

@@ -129,12 +129,13 @@
                             <i class="fas fa-check-circle me-2"></i> Thank you! Your message has been sent successfully.
                         </div>
 
-                       <form action="" method="POST">
+                       <form id="contactForm" action="" method="POST">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Your Name</label>
                                         <input
+id="name"
 type="text"
 name="name"
 class="form-control-custom"
@@ -147,6 +148,7 @@ required>
                                     <div class="form-group">
                                         <label class="form-label">Your Email</label>
                                         <input
+id="email"
 type="email"
 name="email"
 class="form-control-custom"
@@ -165,6 +167,7 @@ required>
                             <div class="form-group">
                                 <label class="form-label">Message</label>
                             <textarea
+id="message"
 name="message"
 class="form-control-custom"
 rows="6"
@@ -172,12 +175,9 @@ placeholder="Message"
 required></textarea>
                                 <div class="error-message" id="messageError"></div>
                             </div>
-<button
-type="submit"
-name="submit"
-class="btn-gradient"><a href="mailto:muhammadali20@gmail.com" style="color: white; text-decoration: none;">
-Send Message
-</a>
+<button type="submit" class="btn-gradient">
+    <i class="fas fa-paper-plane me-2"></i>
+    Send Message
 </button>
                         </form>
                     </div>
